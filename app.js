@@ -110,6 +110,10 @@ var express = require('express');
 var app = express.createServer();
 var io = require('socket.io').listen(app);
 var sqlite3 = require('sqlite3').verbose();
+var lessMiddleware = require('less-middleware');
+
+app.use(lessMiddleware(__dirname + '/views'));
+//app.use(express.static(__dirname + '/views'));
 
 app.get('*', function(req, res){
 	res.sendfile('index.html', { root:__dirname + '/views/' });
