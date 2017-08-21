@@ -24,8 +24,3 @@ with socket.io as I used it. But with the pleasure of going back to level 1 in t
 
 ## Client side stack
 Some HTML5 (cf node.js) and basic CSS.
-
-# Aim
-The goal of this project is to achieve an *improved* and *generic* version of my initial solution, without allocating too 
-much time on it. It should not be tied to to original assignment but handle a normal need.
-The original solution is the second commit of the repo
